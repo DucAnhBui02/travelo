@@ -1,0 +1,30 @@
+.search_travel_area {
+    padding-top: 142px;
+    padding-bottom: 150px;
+    background: #F7FAFD;
+
+    h3 {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 26px;
+    }
+
+    .border_search {
+        border: 1px solid #DEE2E7;
+        padding: 25px;
+
+        select {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            line-height: 50px;
+            color: #AAB1B7;
+            height: 50px;
+            padding-left: 15px;
+            border: 1px solid #DEE2E7;
+            outline: none;
+            background: transparent;
+            border-radius: 5px;
+        }
+    }
+}

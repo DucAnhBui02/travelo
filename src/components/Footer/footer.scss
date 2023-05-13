@@ -1,0 +1,120 @@
+.footer {
+    background: #040E27;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    z-index: 0;
+
+    .footer-top {
+        padding-top: 115px;
+        padding-bottom: 130px;
+
+        .logo {
+            margin-bottom: 40px;
+        }
+
+        p {
+            color: #aab1b7;
+            font-size: 14px;
+
+            a {
+                color: #aab1b7;
+                text-decoration: none;
+            }
+        }
+
+        .social-link {
+            margin-top: 47px;
+
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    display: inline-block;
+                    list-style: none;
+                    line-height: 36px;
+    
+                    a {
+                        width: 30px;
+                        display: inline-block;
+                        margin-right: 7px;
+                        color: #aab1b7;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .footer_title {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 45px;
+        }
+
+        .link {
+            position: relative;
+            top: -14px;
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        color: #aab1b7;
+                        font-size: 16px;
+                        line-height: 36px;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .double_link {
+            li {
+                width: 50%;
+                float: left;
+            }
+        }
+
+        .instagram_feed {
+            margin: -7.5px -7.5px 0 -7.5px;
+
+            .single_insta {
+                width: 33.33%;
+                float: left;
+                padding: 7.5px;
+                overflow: hidden;
+    
+                img {
+                    width: 100%;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        padding-bottom: 26px;
+
+        .footer_border {
+            border-top: 1px solid #363E52;
+            padding-bottom: 26px;
+        }
+
+        .copy-right {
+            font-size: 14px;
+            color: #7A838B;
+            margin: 0;
+            font-weight: 400;
+
+            a {
+               color:  #FF4A52;
+               text-decoration: none;
+            }
+        }
+    }
+}

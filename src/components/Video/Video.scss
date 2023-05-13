@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
+.video_area {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 190px 0;
+
+    h3 {
+        font-size: 80px;
+        font-weight: 400;
+        color: #fff;
+        font-family: "Nothing You Could Do", cursive;
+        margin-bottom: 0;
+        line-height: 0.5;
+        margin-bottom: 55px;
+    }
+    .popup-video {
+        width: 84px;
+        height: 84px;
+        text-align: center;
+        line-height: 84px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        background: #1ec6b6;
+        display: inline-block;
+        color: #fff;
+        font-size: 17px;
+
+        svg {
+            position: relative;
+            left: 2px;
+        }
+    }
+
+    .video_play_btn {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: #1ec6b6;
+            border-radius: 50%;
+            animation: pulse-border 1500ms ease-out infinite;
+            left: 0;
+            bottom: 0;          
+        }
+
+        @keyframes pulse-border {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.8);
+                opacity: 0;
+            }
+        }
+    }
+}

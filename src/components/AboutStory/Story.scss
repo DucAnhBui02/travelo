@@ -1,0 +1,53 @@
+.about_story {
+    margin-top: 145px;
+    margin-bottom: 115px;
+
+    .about_title {
+        h3 {
+            font-size: 38px;
+            font-weight: 400;
+            color: #040e27;
+            margin-bottom: 60px;
+        }
+    }
+
+    .story_info {
+        margin-bottom: 52px;
+
+        p {
+            font-size: 17px;
+            font-weight: 400;
+            color: #7a838b;
+            line-height: 28px;
+            font-family: "Rubik", sans-serif;
+        }
+    }
+
+    .story_thumb {
+        margin-bottom: 60px;
+
+        .padd {
+            padding-right: 58px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+
+    .single_counter {
+        margin-bottom: 30px;
+
+        h3{
+            font-size: 60px;
+            color: #ff4a52;
+        }
+
+        p {
+            font-size: 17px;
+            font-weight: 400;
+            color: #7a838b;
+            line-height: 28px;
+            font-family: "Rubik", sans-serif;
+        }
+    }
+}

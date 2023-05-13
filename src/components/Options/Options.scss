@@ -1,0 +1,59 @@
+.single_place {
+    background: #fff;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+
+    .thumb {
+        position: relative;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+
+        .price {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #1EC6B6;
+            font-size: 17px;
+            color: #fff;
+            border-radius: 18px;
+            padding:3px 18px;
+            font-weight: 500;
+        }
+    }
+
+    .place_info {
+        color: #7A838B;
+        padding: 27px 20px 25px 20px;;
+
+        h3 {
+            color: #000;
+            font-size: 22px;
+          
+        }
+
+        .rating_days {
+
+            .icon_star {
+                font-size: 12px;
+                color: #FDAE5C;
+            }
+
+            a {
+                color: #7A838B;                   
+            }
+        }
+
+        .days {
+
+            font-size: 14px;
+
+            a {
+                color: #7A838B;  
+                margin-left: 8px;                
+            }
+        }
+    }
+}
