@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -19,9 +20,24 @@ import img from "~/assets/img";
 import config from "~/config";
 
 const Header = () => {
+  useEffect(() => {
+    window.addEventListener("scroll", isSticky);
+    return () => {
+      window.removeEventListener("scroll", isSticky);
+    };
+  });
+
+  const isSticky = (e) => {
+    const header = document.querySelector(".main-header-area");
+    const scrollTop = window.scrollY;
+    scrollTop >= 250
+      ? header.classList.add("sticky")
+      : header.classList.remove("sticky");
+  };
+
   return (
     <div className="header-area">
-      <div id="sticky-header" className="main-header-area">
+      <div id="sticky-header" className="main-header-area ">
         <div className="container-fluid">
           <div className="header_bottom_border">
             <div className="row align-items-center">
@@ -53,12 +69,12 @@ const Header = () => {
                         </Link>
                         <ul className="submenu">
                           <li>
-                            <Link to="destination_details.html">
+                            <Link to={config.routes.details}>
                               Destinations details
                             </Link>
                           </li>
                           <li>
-                            <Link to="elements.html">elements</Link>
+                            <Link to={config.routes.elements}>Elements</Link>
                           </li>
                         </ul>
                       </li>
@@ -68,15 +84,17 @@ const Header = () => {
                         </Link>
                         <ul className="submenu">
                           <li>
-                            <Link to="blog.html">blog</Link>
+                            <Link to={config.routes.blog}>Blog</Link>
                           </li>
                           <li>
-                            <Link to="single-blog.html">single-blog</Link>
+                            <Link to={config.routes.single_blog}>
+                              Single-blog
+                            </Link>
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <Link to="contact.html">Contact</Link>
+                        <Link to={config.routes.contact}>Contact</Link>
                       </li>
                     </ul>
                   </nav>

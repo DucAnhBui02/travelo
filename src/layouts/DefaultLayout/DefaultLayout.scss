@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,4 +8,21 @@ a {
     text-decoration: none !important;
 }
 
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #7a838b;
+    margin-bottom: 0px;
+    font-family: "Rubik", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Rubik", sans-serif;
+    color: #001D38;
+}
+
+ul li {
+    list-style: none;
+}
 

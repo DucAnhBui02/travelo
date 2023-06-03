@@ -3,10 +3,12 @@
     margin-bottom: 30px;
     border-radius: 5px;
     overflow: hidden;
+    transition: .3s;
 
     .thumb {
         position: relative;
         overflow: hidden;
+
         img {
             width: 100%;
         }
@@ -15,44 +17,56 @@
             position: absolute;
             top: 10px;
             left: 10px;
-            background: #1EC6B6;
+            background: #1ec6b6;
             font-size: 17px;
             color: #fff;
             border-radius: 18px;
-            padding:3px 18px;
+            padding: 3px 18px;
             font-weight: 500;
+            transition: .3s;
+        }
+    }
+
+    &:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+
+        .thumb > a {
+            background: #ff4a52;
+        }
+
+        .place_info > a > h3 {
+            color: #ff4a52;
         }
     }
 
     .place_info {
-        color: #7A838B;
-        padding: 27px 20px 25px 20px;;
+        color: #7a838b;
+        padding: 27px 20px 25px 20px;
 
         h3 {
             color: #000;
             font-size: 22px;
-          
+            font-weight: 500;
+            transition: .3s;
         }
 
         .rating_days {
-
             .icon_star {
                 font-size: 12px;
-                color: #FDAE5C;
+                color: #fdae5c;
             }
 
             a {
-                color: #7A838B;                   
+                color: #7a838b;
             }
         }
 
         .days {
-
             font-size: 14px;
 
             a {
-                color: #7A838B;  
-                margin-left: 8px;                
+                color: #7a838b;
+                margin-left: 8px;
             }
         }
     }

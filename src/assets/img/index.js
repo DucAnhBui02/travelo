@@ -35,5 +35,13 @@ const img = {
   bradcam2: require("~/assets/img/banner/bradcam2.png"),
   about1: require("~/assets/img/about/1.png"),
   about2: require("~/assets/img/about/2.png"),
+  details: require("~/assets/img/banner/destination.png"),
+  blog: require("~/assets/img/banner/bradcam4.png"),
+  blog1: require("~/assets/img/blog/single_blog_1.png"),
+  blog2: require("~/assets/img/blog/single_blog_2.png"),
+  blog3: require("~/assets/img/blog/single_blog_3.png"),
+  blog4: require("~/assets/img/blog/single_blog_4.png"),
+  blog5: require("~/assets/img/blog/single_blog_5.png"),
+
 };
 export default img;

@@ -70,10 +70,12 @@ const Search = () => {
                           disableSwap
                         />
                       </Box>
-                      <p>
-                        <input type="text" readOnly />
-                      </p>
                     </div>
+                  </div>
+                  <div className="reset-btn">
+                    <button className="box-btn4" type="submit">
+                      Reset
+                    </button>
                   </div>
                 </div>
               </div>

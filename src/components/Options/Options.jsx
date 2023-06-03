@@ -9,17 +9,17 @@ const Options = (props) => {
   const datalist = [
     {
       img: img.place1,
-      title: "Miami Beach",
+      title: "California",
       description: "United State of America",
     },
     {
       img: img.place2,
-      title: "Miami Beach",
+      title: "Korola Megna",
       description: "United State of America",
     },
     {
       img: img.place3,
-      title: "Miami Beach",
+      title: "London",
       description: "United State of America",
     },
     {
@@ -29,12 +29,12 @@ const Options = (props) => {
     },
     {
       img: img.place5,
-      title: "Miami Beach",
+      title: "California",
       description: "United State of America",
     },
     {
       img: img.place6,
-      title: "Miami Beach",
+      title: "Saintmartline Iceland",
       description: "United State of America",
     },
   ];
