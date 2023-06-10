@@ -1,0 +1,32 @@
+.category_widget {
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            border-bottom: 1px solid #f0e9ff;
+            transition: all 0.3s ease 0s;
+            padding-bottom: 12px;
+            padding-top: 15px;
+
+            a {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 28px;
+                color: #7a838b;
+
+                &:hover {
+                    color: #ff4a52;
+                }
+            }
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &:first-child {
+                padding-top: 0;
+            }
+        }
+    }
+}

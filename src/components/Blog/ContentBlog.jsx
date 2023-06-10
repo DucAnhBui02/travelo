@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -6,9 +5,13 @@ import img from "~/assets/img";
 import "./ContentBlog.scss";
 import {
   faComments,
-  faSearch,
   faUser,
+  faSearch,
 } from "@fortawesome/free-solid-svg-icons";
+import Category from "./Category/Category";
+import Post from "./Post/Post";
+import InstaFeed from "./InstaFeed/InstaFeed";
+import Form from "./Form/Form";
 
 const ContentBlog = () => {
   const datas = [
@@ -28,6 +31,7 @@ const ContentBlog = () => {
       image: img.blog5,
     },
   ];
+
   return (
     <section>
       <div className="blog_area">
@@ -72,26 +76,17 @@ const ContentBlog = () => {
             </div>
             <div className="col-lg-4">
               <div className="blog_right">
-                <aside className="single_sidebar">
-                  <form>
-                    <div className="form-group">
-                      <div className="input-group mb-3">
-                        <input type="text" placeholder="Search Keyword " />
-                        <div className="input-group-append">
-                          <button>
-                            <FontAwesomeIcon icon={faSearch} />
-                          </button>
-                        </div>
-                      </div>
-                      <button
-                        className="btn rounded-0 primary-bg text-white w-100"
-                        style={{ background: "#1EC6B6" }}
-                      >
-                        Seach
-                      </button>
-                    </div>
-                  </form>
-                </aside>
+                <Form placeholderText="Search Keyword" btnText="SEARCH">
+                  <div className="input-group-append">
+                    <button className="btn">
+                      <FontAwesomeIcon icon={faSearch} />
+                    </button>
+                  </div>
+                </Form>
+                <Category />
+                <Post />
+                <InstaFeed />
+                <Form placeholderText="Enter email" btnText="SUBSCRIBE" />
               </div>
             </div>
           </div>

@@ -1,0 +1,19 @@
+.recent_post_widget {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        li {
+            margin: 0;
+            padding: 0;
+            width: 33.33%;
+            padding: 0 6px;
+            margin-bottom: 15px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}

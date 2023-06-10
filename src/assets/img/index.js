@@ -42,6 +42,15 @@ const img = {
   blog3: require("~/assets/img/blog/single_blog_3.png"),
   blog4: require("~/assets/img/blog/single_blog_4.png"),
   blog5: require("~/assets/img/blog/single_blog_5.png"),
-
+  post_1: require("~/assets/img/post/post_1.png"),
+  post_2: require("~/assets/img/post/post_2.png"),
+  post_3: require("~/assets/img/post/post_3.png"),
+  post_4: require("~/assets/img/post/post_4.png"),
+  post_5: require("~/assets/img/post/post_5.png"),
+  post_6: require("~/assets/img/post/post_6.png"),
+  post_7: require("~/assets/img/post/post_7.png"),
+  post_8: require("~/assets/img/post/post_8.png"),
+  post_9: require("~/assets/img/post/post_9.png"),
+  post_10: require("~/assets/img/post/post_10.png"),
 };
 export default img;
