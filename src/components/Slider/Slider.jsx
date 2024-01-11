@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useLayoutEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
@@ -43,7 +43,7 @@ const Slider = () => {
     setIndex(newSlide);
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const timer = setTimeout(() => {
       setIndex((prevIndex) =>
         prevIndex === data.length - 1 ? 0 : prevIndex + 1
